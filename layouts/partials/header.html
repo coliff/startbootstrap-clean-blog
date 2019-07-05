@@ -25,7 +25,7 @@
     <link href="{{ .Site.BaseURL }}/css/clean-blog.min.css" rel="stylesheet">
     {{- range $val := $.Site.Params.customCSS -}}
 	{{- if gt (len $val) 0 -}}
-		<link rel="stylesheet" type="text/css" href="{{ $val }}">
+		<link rel="stylesheet" href="{{ $val }}">
 	{{- end -}}
     {{- end -}}
 
